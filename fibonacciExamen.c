@@ -1,4 +1,4 @@
-///Sergio Pérez Villanueva DNI=46087545F
+
 #include <iostream>
 
 using namespace std;
