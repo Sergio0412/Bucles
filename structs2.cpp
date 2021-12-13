@@ -5,8 +5,8 @@
 
 using namespace std;
 
-const int MAX=20;
-const int CANTIDAD=20;
+const int MAX=20;       //Cantidad máxima de objetos en la lista
+const int CANTIDAD=20;      //Máxima cantidad de carácteres para los nombres de los objetos
 
 typedef char TCadena[CANTIDAD];
 
@@ -25,6 +25,7 @@ void bajaObjeto(TCantidad objetos, TCantidad baja, int& numero, int& recom);
 void cambiaPrecio(TCantidad productos, int numero);
 int menu(int opc);
 
+//Función principal que recibe el valor de la variable "opc" y que devuelve la función correspondiente en el menu
 int main()  {
 
     TCantidad objetos, baja;
@@ -61,7 +62,7 @@ int main()  {
 
 }
 
-//Función menu que no
+//Función menu que nos muestra las diferentes opciones de nuestro programa
 int menu(int opc) {
 
     cout<<"Mercadillo de Lucas"<<endl;
@@ -178,7 +179,7 @@ void mostrarObjetos(TCantidad objetos, int numero, int recom)   {
 
 }
 
-//Función para cambiar los precios de los producotos
+//Función para cambiar los precios de los productos
 void cambiaPrecio(TCantidad objetos, int numero) {
 
     TCantidad nuevo;
